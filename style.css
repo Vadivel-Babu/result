@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+   font-family: 'Hanken Grotesk', sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+.container{
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  box-shadow: hsl(221, 100%, 96%) 0px 8px 24px;
+  width: 100%;
+}
+.result{
+  flex: 1;
+  background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  text-align: center;
+  padding: 25px 40px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  
+}
+.result-title{
+  color: hsla(0, 0%, 100%,0.7);
+  margin-bottom: 16px;  
+}
+.percentage{
+  width: 200px;
+  height:200px;
+  background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto;
+}
+.total_percentage{
+  font-size: 50px;
+  font-weight: 800;
+  color:hsl(0, 0%, 100%);
+}
+.outPercentage{
+  color: hsla(0, 0%, 100%,0.7);
+}
+.great{
+  color:hsl(0, 0%, 100%);
+  font-size: 35px;
+  margin-bottom: 16px;  
+}
+.para1{
+  color: hsla(0, 0%, 100%,0.7);
+  max-width: 200px;
+}
+.summary{
+  padding: 20px 50px;
+  flex: 1;
+}
+.summary-heading{
+  color:hsl(224, 30%, 27%);
+  margin-bottom: 16px;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+  padding:8px 10px;
+  margin-bottom: 26px;
+  border-radius: 8px;
+}
+.marks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:3px;
+}
+.mark{
+  color:hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+.wrapper.reaction{
+  background-color:hsla(0, 100%, 67%, 0.123);
+}
+.wrapper.memory{
+ background-color:hsla(39, 100%, 56%, 0.123);
+}
+.wrapper.verbal{
+  background-color:hsla(166, 100%, 37%,0.123);
+}
+.wrapper.visual{
+  background-color:hsla(234, 85%, 45%,0.123);
+}
+.reaction{
+  color:hsl(0, 100%, 67%);
+}
+.memory{
+  color: hsl(39, 100%, 56%);
+}
+.verbal{
+  color: hsl(166, 100%, 37%);
+}
+.visual{
+  color: hsl(234, 85%, 45%);
+}
+.num{
+ color:hsla(224, 30%, 27%, 0.76);
+ font-weight: 800;
+}
+
+.button{
+  background-color: hsl(224, 30%, 27%);
+  border: 0;
+  padding: 15px 20px;
+  width: 250px;
+  border-radius: 20px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.button:hover{
+  background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media (min-width:650px) {
+  .container{
+    flex-direction: row;
+    width: max-content;
+  }  
+  .result{
+    border-radius: 25px;
+  }
+}
